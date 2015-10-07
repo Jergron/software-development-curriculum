@@ -10,14 +10,24 @@ Bower is a package manager for the web.
   <br />
  `$ npm install -g bower`<br />
  <br />
+Depending on how your terminal is setup, you may need to `sudo npm install -g bower`.
+[Sudo](https://kb.iu.edu/d/amyi)
+
 *Bower requires node, npm and git.*
 ## Installing Packages
 **Install packages individually** <br />
 <br />
 `$ bower install <package name>`<br />
 <br />
+### Install Options
+-F, --force-latest: Force latest version on conflict <br/>
+-p, --production: Do not install project devDependencies <br/>
+-S, --save: Save installed packages into the project’s bower.json dependencies <br/>
+-D, --save-dev: Save installed packages into the project’s bower.json devDependencies <br/>
+-E, --save-exact: Configure installed packages with an exact version rather than semver <br/>
+e.g. `$ bower install <package name> --save` <br/>
+
 **Install multiple packages**<br />
-<br />
 Using the bower.json file list the packages you're using in your project<br />
  ```
  { 
